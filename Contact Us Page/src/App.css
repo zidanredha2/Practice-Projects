@@ -1,0 +1,93 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+.nav-logo {
+  width: 100px;
+  height: auto;
+}
+.nav-items ul {
+  display: flex;
+  gap: 7.5em;
+  list-style: none;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-header-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-inline: 100px;
+}
+.contact-header-container h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.contact-header-container p {
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline: 100px;
+}
+.btn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 10px 10px;
+}
+.btn-top {
+  display: flex;
+  gap: 20px;
+}
+.btn-mail button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  padding-top: 20px;
+  padding-inline: 100px;
+}
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.background {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: 75%;
+  z-index: -1;
+}
+.btn-container button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
