@@ -1,15 +1,23 @@
 
-import static java.lang.Math.max;
 
 public class Main {
     public static void main(String[] args) {
-        int numerator = 260;
-        int denominator = 130;
-        for (int i = max(numerator, denominator); i<=max(numerator, denominator); i--) {
-            if (numerator % i == 0 && denominator % i == 0) {
-                System.out.println("Greatest common divisor: " + i);
-                return;
+        isPalindrome("A man, a plan, a canal: Panama");
+    }
+    public static boolean isPalindrome(String s) {
+        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        int left = 0;
+        int right = s.length() - 1;
+        System.out.println(s);
+        while (left<right) {
+            if (s.charAt(left) == s.charAt(right)){
+                System.out.printf("%c & %c match", s.charAt(left), s.charAt(right));
+                left++;
+                right--;
+                continue;
             }
+            return false;
         }
+        return true;
     }
 }
