@@ -6,7 +6,7 @@ const FoodCard =({foods}) => {
                 <div className="food-card">
             <img src={BASE_URL + food.image} alt={food.name} />
             <p>{food.text}</p>
-            <button type="button" >{food.price}</button>
+            <button type="button" >${food.price}.99</button>
         </div>)
             })}
         
